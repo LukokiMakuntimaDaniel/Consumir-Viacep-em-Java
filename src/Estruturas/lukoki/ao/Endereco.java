@@ -11,6 +11,18 @@ public class Endereco {
     private  String ddd;
     private  String siafi;
 
+    public Endereco(PegarEndecoViaApi pegarEndecoViaApi) {
+        this.cep =pegarEndecoViaApi.cep();
+        this.logradouro = pegarEndecoViaApi.logradouro();
+        this.complemento = pegarEndecoViaApi.complemento();
+        this.localidade = pegarEndecoViaApi.localidade();
+        this.uf = pegarEndecoViaApi.uf();
+        this.ibge = pegarEndecoViaApi.ibge();
+        this.gia = pegarEndecoViaApi.gia();
+        this.ddd = pegarEndecoViaApi.ddd();
+        this.siafi = pegarEndecoViaApi.siafi();
+    }
+
     public String getCep() {
         return cep;
     }

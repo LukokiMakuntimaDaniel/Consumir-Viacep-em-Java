@@ -14,6 +14,11 @@ public class Main {
             opcao = leitura.nextInt();
             switch (opcao){
                 case 1:
+                    leitura.nextLine();
+                    System.out.println("PESQUISAR A LOCALIDADE POR CEP");
+                    System.out.print("Digite o seu cep ");
+                    cep = leitura.nextLine();
+
                     System.out.println("1");
                     break;
                 case 2:
