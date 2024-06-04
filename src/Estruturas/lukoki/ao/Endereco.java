@@ -10,6 +10,7 @@ public class Endereco {
     private  String gia;
     private  String ddd;
     private  String siafi;
+    private  String bairro;
 
     public Endereco(PegarEndecoViaApi pegarEndecoViaApi) {
         this.cep =pegarEndecoViaApi.cep();
@@ -17,10 +18,19 @@ public class Endereco {
         this.complemento = pegarEndecoViaApi.complemento();
         this.localidade = pegarEndecoViaApi.localidade();
         this.uf = pegarEndecoViaApi.uf();
+        this.bairro = pegarEndecoViaApi.bairro();
         this.ibge = pegarEndecoViaApi.ibge();
         this.gia = pegarEndecoViaApi.gia();
         this.ddd = pegarEndecoViaApi.ddd();
         this.siafi = pegarEndecoViaApi.siafi();
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
 
     public String getCep() {
