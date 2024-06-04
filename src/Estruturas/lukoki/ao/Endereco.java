@@ -97,7 +97,7 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "Endereco{" +
+        return "{" +
                 "cep='" + cep + '\'' +
                 ", logradouro='" + logradouro + '\'' +
                 ", complemento='" + complemento + '\'' +
